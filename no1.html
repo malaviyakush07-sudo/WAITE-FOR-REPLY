@@ -1,55 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ask Her Out</title>
+<meta charset="UTF-8">
 
-  <link rel="stylesheet" href="./style.css" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-70SHQBPSCS"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-70SHQBPSCS');
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-70SHQBPSCS"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-70SHQBPSCS');
-  </script>
-
-  <script>
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll("button").forEach(function(btn) {
-    btn.addEventListener("click", function() {
-      let buttonText = btn.innerText || "unknown_button";
-      
-      gtag('event', 'button_click', {
-        'event_category': 'engagement',
-        'event_label': buttonText
-      });
-    });
-  });
-});
+gtag('event','reached_no1');
 </script>
 
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="tenor-gif-embed" data-postid="22050818" data-share-method="host" data-aspect-ratio="1"
-      data-width="100%">
-      <a href="https://tenor.com/view/mochi-gif-22050818">Mochi Sticker</a>from
-      <a href="https://tenor.com/search/mochi-stickers">Mochi Stickers</a>
-    </div>
-    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-    <h1>Please think again! 🙄</h1>
-    <p>Aatli jaldi na no ke😥</p>
+<div class="container">
 
-    <div class="btn">
-      <a href="yes.html" onclick="trackClick('yes')">Yes</a>
-      <a href="no2.html" onclick="trackClick('no')">No</a>
-    </div>
-  </div>
+<img src="https://media.tenor.com/images/placeholder.gif" width="200">
+
+<h1>Please think again! 🙄</h1>
+<p>Aatli jaldi na no ke 🥺</p>
+
+<div class="btn">
+<a href="yes.html">Yes</a>
+<a href="no2.html">No</a>
+</div>
+
+</div>
 </body>
-
 </html>

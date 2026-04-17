@@ -1,55 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Proposed Her</title>
+<meta charset="UTF-8">
+<title>Ask Her Out</title>
 
-  <link rel="stylesheet" href="./style.css" />
-
-	<!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-70SHQBPSCS"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-70SHQBPSCS');
-  </script>
-
-  <script>
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll("button").forEach(function(btn) {
-    btn.addEventListener("click", function() {
-      let buttonText = btn.innerText || "unknown_button";
-      
-      gtag('event', 'button_click', {
-        'event_category': 'engagement',
-        'event_label': buttonText
-      });
-    });
-  });
-});
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-70SHQBPSCS"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-70SHQBPSCS');
 </script>
 
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="tenor-gif-embed" data-postid="22885016" data-share-method="host" data-aspect-ratio="1.04918"
-      data-width="100%">
-      <a href="https://tenor.com/view/manja-gif-22885016">Manja Sticker</a>from
-      <a href="https://tenor.com/search/manja-stickers">Manja Stickers</a>
-    </div>
-    
-    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-    <h1>Do you love me? 🤗</h1>
 
-    <div class="btn">
-      <a href="yes.html" onclick="trackClick('yes')">Yes</a>
-      <a href="no1.html" onclick="trackClick('no')">No</a>
-    </div>
-  </div>
+<div class="container">
+
+<div class="tenor-gif-embed" data-postid="22885016" data-width="100%"></div>
+<script async src="https://tenor.com/embed.js"></script>
+
+<h1>Do you love me? 🤭</h1>
+
+<div class="btn">
+<a href="yes.html">Yes</a>
+<a href="no1.html">No</a>
+</div>
+
+</div>
+
 </body>
-
 </html>
