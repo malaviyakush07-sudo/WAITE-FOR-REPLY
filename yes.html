@@ -18,6 +18,21 @@
     gtag('config', 'G-70SHQBPSCS');
   </script>
 
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("button").forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      let buttonText = btn.innerText || "unknown_button";
+      
+      gtag('event', 'button_click', {
+        'event_category': 'engagement',
+        'event_label': buttonText
+      });
+    });
+  });
+});
+</script>
+
 </head>
 
 <body>
