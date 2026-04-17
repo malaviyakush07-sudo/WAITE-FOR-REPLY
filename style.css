@@ -4,8 +4,10 @@ body {
   background: #0b0b0b;
   color: white;
   overflow: hidden;
+  text-align: center;
 }
 
+/* glow background */
 body::before {
   content: "";
   position: fixed;
@@ -21,6 +23,7 @@ body::before {
   100% { transform: translate(20%, 20%); }
 }
 
+/* VFX */
 canvas {
   position: fixed;
   top: 0;
@@ -28,6 +31,7 @@ canvas {
   z-index: -1;
 }
 
+/* layout */
 .container {
   height: 100vh;
   display: flex;
@@ -36,6 +40,7 @@ canvas {
   align-items: center;
 }
 
+/* text */
 h1 {
   font-size: 38px;
   text-shadow: 0 0 20px #ff2e63;
@@ -45,6 +50,7 @@ p {
   color: #bbb;
 }
 
+/* gif */
 img {
   width: 220px;
   border-radius: 20px;
@@ -52,6 +58,7 @@ img {
   box-shadow: 0 0 30px rgba(255,0,100,0.4);
 }
 
+/* buttons */
 .btn a, .btn button {
   text-decoration: none;
   padding: 12px 28px;
@@ -59,9 +66,9 @@ img {
   border-radius: 30px;
   background: rgba(255,255,255,0.08);
   color: white;
-  transition: 0.3s;
   border: none;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .btn a:hover, .btn button:hover {
