@@ -1,20 +1,31 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: black;
   color: white;
   overflow: hidden;
 }
 
-/* VFX Canvas Background */
-canvas {
+/* Background video */
+video {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* Dark overlay */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
   z-index: -1;
 }
 
-/* Center Layout */
+/* Center layout */
 .container {
   height: 100vh;
   display: flex;
@@ -24,29 +35,19 @@ canvas {
   animation: fadeIn 1.5s ease;
 }
 
-/* Title */
+/* Text */
 h1 {
   font-size: 42px;
-  letter-spacing: 2px;
   text-shadow: 0 0 20px #ff0055;
 }
 
-/* Subtitle */
 p {
   color: #ccc;
 }
 
-/* GIF */
-img {
-  width: 260px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 30px #ff0055;
-}
-
 /* Buttons */
 .btn a, .btn button {
-  text-decoration: none; /* 🚫 REMOVE UNDERLINE */
+  text-decoration: none;
   padding: 14px 35px;
   margin: 10px;
   border-radius: 50px;
@@ -58,14 +59,21 @@ img {
   transition: 0.3s;
 }
 
-/* Hover */
 .btn a:hover, .btn button:hover {
   background: linear-gradient(45deg, #ff0055, #ff4d6d);
   transform: scale(1.15);
   box-shadow: 0 0 20px #ff0055;
 }
 
-/* Fade animation */
+/* GIF */
+img {
+  width: 250px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 30px #ff0055;
+}
+
+/* Animation */
 @keyframes fadeIn {
   from {opacity:0; transform: translateY(30px);}
   to {opacity:1;}

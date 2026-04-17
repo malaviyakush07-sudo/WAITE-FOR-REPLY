@@ -2,33 +2,42 @@
 <html>
 <head>
 <meta charset="UTF-8">
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-70SHQBPSCS"></script>
-<script>
-window.dataLayer=[];function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config','G-70SHQBPSCS');
-gtag('event','reached_no2');
-</script>
-
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <script src="vfx.js"></script>
+
+<video autoplay muted loop>
+  <source src="https://www.w3schools.com/howto/rain.mp4">
+</video>
+<div class="overlay"></div>
+
 <div class="container">
 
-<img src="https://media.tenor.com/2roX3uxz_68AAAAC/sad-cat.gif">
+<img src="https://media.tenor.com/fY9bQzJ8w0QAAAAi/crying-cat.gif">
 
-<h1>Haju ek var vichari le 😣</h1>
-<p>Plzz yrr 🥺</p>
+<h1>Last Chance 😈</h1>
 
 <div class="btn">
 <a href="yes.html">Yes 💖</a>
-<a href="no3.html">No 😤</a>
+<button id="noBtn">No 😈</button>
 </div>
 
 </div>
+
+<script>
+const btn = document.getElementById("noBtn");
+
+btn.addEventListener("mouseover", () => {
+  const x = Math.random() * (window.innerWidth - 150);
+  const y = Math.random() * (window.innerHeight - 100);
+
+  btn.style.position = "absolute";
+  btn.style.left = x + "px";
+  btn.style.top = y + "px";
+});
+</script>
+
+<script src="vfx.js"></script>
 </body>
 </html>
