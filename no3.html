@@ -7,20 +7,16 @@
 
 <body>
 
-<video autoplay muted loop>
-  <source src="https://www.w3schools.com/howto/rain.mp4">
-</video>
-<div class="overlay"></div>
-
 <div class="container">
 
-<img src="https://media.tenor.com/fY9bQzJ8w0QAAAAi/crying-cat.gif">
+<img src="https://media.tenor.com/fY9bQzJ8w0QAAAAi/crying.gif">
 
-<h1>Last Chance 😈</h1>
+<h1>pls Mani ja ne! 😭</h1>
+<p>bov khotu ho aa 😭</p>
 
 <div class="btn">
-<a href="yes.html">Yes 💖</a>
-<button id="noBtn">No 😈</button>
+<a href="yes.html">Yes</a>
+<button id="noBtn">No</button>
 </div>
 
 </div>
@@ -28,17 +24,16 @@
 <script>
 const btn = document.getElementById("noBtn");
 
-btn.addEventListener("mouseover", () => {
-  const x = Math.random() * (window.innerWidth - 150);
-  const y = Math.random() * (window.innerHeight - 100);
+btn.addEventListener("mouseover", ()=>{
+  const x = Math.random()*(window.innerWidth-120);
+  const y = Math.random()*(window.innerHeight-80);
 
-  btn.style.position = "absolute";
-  btn.style.left = x + "px";
-  btn.style.top = y + "px";
+  btn.style.position="absolute";
+  btn.style.left=x+"px";
+  btn.style.top=y+"px";
 });
 </script>
 
 <script src="vfx.js"></script>
-
 </body>
 </html>

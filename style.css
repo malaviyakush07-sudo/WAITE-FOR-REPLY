@@ -1,28 +1,28 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: radial-gradient(circle at center, #0a0a0a, #000);
+  background: #0b0b0b;
   color: white;
   overflow: hidden;
 }
 
-/* Animated gradient glow */
+/* animated glow background */
 body::before {
   content: "";
   position: fixed;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(255,0,80,0.2), transparent 60%);
-  animation: moveGlow 8s infinite alternate;
+  background: radial-gradient(circle, rgba(255,0,100,0.15), transparent 60%);
+  animation: move 10s infinite alternate;
   z-index: -2;
 }
 
-@keyframes moveGlow {
+@keyframes move {
   0% { transform: translate(-20%, -20%); }
   100% { transform: translate(20%, 20%); }
 }
 
-/* Canvas VFX */
+/* VFX canvas */
 canvas {
   position: fixed;
   top: 0;
@@ -30,65 +30,57 @@ canvas {
   z-index: -1;
 }
 
-/* Center layout */
+/* center layout */
 .container {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: fadeIn 1.2s ease;
+  animation: fade 1s ease;
 }
 
-/* Title */
+/* text */
 h1 {
   font-size: 42px;
   text-align: center;
-  text-shadow: 0 0 25px #ff0055;
-  letter-spacing: 2px;
+  text-shadow: 0 0 20px #ff2e63;
 }
 
-/* Subtitle */
 p {
   color: #bbb;
   margin-top: 10px;
 }
 
-/* GIF */
+/* image */
 img {
-  width: 260px;
+  width: 240px;
   border-radius: 20px;
   margin-bottom: 25px;
-  box-shadow: 0 0 40px rgba(255,0,80,0.4);
+  box-shadow: 0 0 30px rgba(255,0,100,0.4);
 }
 
-/* Buttons */
-.btn {
-  margin-top: 30px;
-}
-
+/* buttons */
 .btn a, .btn button {
   text-decoration: none;
-  padding: 14px 35px;
+  padding: 12px 30px;
   margin: 10px;
-  border-radius: 50px;
-  border: 1px solid rgba(255,255,255,0.2);
-  background: rgba(255,255,255,0.05);
+  border-radius: 30px;
+  border: none;
+  background: rgba(255,255,255,0.08);
   color: white;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(10px);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
-/* Hover effect */
 .btn a:hover, .btn button:hover {
-  background: linear-gradient(45deg, #ff0055, #ff4d6d);
-  transform: scale(1.15);
-  box-shadow: 0 0 25px #ff0055;
+  background: linear-gradient(45deg, #ff2e63, #ff6b81);
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #ff2e63;
 }
 
-/* Fade */
-@keyframes fadeIn {
-  from {opacity: 0; transform: translateY(30px);}
-  to {opacity: 1;}
+@keyframes fade {
+  from {opacity:0; transform: translateY(20px);}
+  to {opacity:1;}
 }
